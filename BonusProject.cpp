@@ -108,6 +108,21 @@ void sim(int timetoserve, int freq, int simtime, int numberOfServers)
 
 int main()
 {
-    sim(50, 1, 10000, 20);
-    return 0;
+    int time_to_serve = 50;
+    int frequency = 1;
+    int simtime = 10000;
+    int number_of_servers = 20;
+
+    cout << "-------------------------------------------------------------------------------\n\n";
+    cout << "                      Simulation Settings\n\n";
+    cout << "Number of Servers: " << number_of_servers << "\n";
+    cout << "Time to Serve: " << time_to_serve << "\n";
+    cout << "Customer Frequency: " << frequency << "\n";
+    cout << "Simulation Time: " << simtime << "\n";
+    cout << "-------------------------------------------------------------------------------\n\n";
+    cout << "                      Simulation Results\n\n";
+    sim(time_to_serve, frequency, simtime, number_of_servers);
+    cout << "\n";
+
+    return (0);
 }
