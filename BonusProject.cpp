@@ -123,6 +123,7 @@ int main()
     cout << "                      Simulation Results\n\n";
     sim(time_to_serve, frequency, simtime, number_of_servers);
     cout << "\n";
+    cout << "-------------------------------------------------------------------------------\n";
 
     return (0);
 }
